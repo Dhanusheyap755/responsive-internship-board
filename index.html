@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Accessible responsive internship board with search and domain filters.">
+  <title>Internship Board</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#" aria-label="Internship Board home">
+        <span class="brand-mark" aria-hidden="true">IB</span>
+        <span>Internship Board</span>
+      </a>
+      <span class="header-note">Find your next opportunity</span>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">CAREER OPPORTUNITIES</p>
+        <h1>Find an internship that fits you.</h1>
+        <p class="hero-text">
+          Search by role or company and filter opportunities by domain.
+        </p>
+      </div>
+    </section>
+
+    <section class="container board-section" aria-labelledby="board-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">INTERNSHIP LISTINGS</p>
+          <h2 id="board-title">Open internships</h2>
+        </div>
+        <p id="result-count" class="result-count" aria-live="polite"></p>
+      </div>
+
+      <form id="filters-form" class="filters" role="search" novalidate>
+        <div class="field">
+          <label for="search-input">Search internships</label>
+          <div class="search-wrap">
+            <span aria-hidden="true">⌕</span>
+            <input
+              id="search-input"
+              name="search"
+              type="search"
+              placeholder="Search by role, company, or keyword"
+              autocomplete="off"
+            >
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="domain-filter">Domain</label>
+          <select id="domain-filter" name="domain">
+            <option value="all">All domains</option>
+          </select>
+        </div>
+
+        <button id="clear-filters" class="button button-secondary" type="button">
+          Clear filters
+        </button>
+      </form>
+
+      <div id="status-message" class="status" role="status" aria-live="polite"></div>
+
+      <div id="internship-grid" class="internship-grid" aria-live="polite"></div>
+
+      <div id="empty-state" class="empty-state" hidden>
+        <div class="empty-icon" aria-hidden="true">⌕</div>
+        <h3>No internships found</h3>
+        <p>Try a different keyword or choose another domain.</p>
+        <button id="empty-clear" class="button" type="button">Show all internships</button>
+      </div>
+
+      <div id="error-state" class="empty-state error-state" hidden>
+        <div class="empty-icon" aria-hidden="true">!</div>
+        <h3>Something went wrong</h3>
+        <p>We could not load the internship data. Please refresh and try again.</p>
+        <button id="retry-button" class="button" type="button">Try again</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>Built with semantic HTML, CSS and vanilla JavaScript.</p>
+      <p>&copy; <span id="year"></span> Internship Board</p>
+    </div>
+  </footer>
+</body>
+</html>
