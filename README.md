@@ -1,65 +1,34 @@
-# Responsive Internship Board
+# Responsive Internship Opportunity Board
 
-A beginner-friendly, accessible internship listing interface built with **semantic HTML, responsive CSS, and vanilla JavaScript**.
+[![HTML5](https://img.shields.io/badge/HTML5-Semantic%20Markup-E34F26?style=flat&logo=html5&logoColor=white)](https://developer.mozilla.org/)
+[![CSS3](https://img.shields.io/badge/CSS3-Flexbox%20%26%20Grid-1572B6?style=flat&logo=css3&logoColor=white)](https://developer.mozilla.org/)
+[![JavaScript](https://img.shields.io/badge/JavaScript-ES6-F7DF1E?style=flat&logo=javascript&logoColor=black)](https://developer.mozilla.org/)
 
-## Features
+## 📌 Project Overview
+An accessible, mobile-first internship discovery interface developed with semantic **HTML5, modern CSS3 (Flexbox & Grid), and vanilla JavaScript**. It allows students and aspiring engineers to search, filter, and bookmark technical internship listings across multiple industries.
 
-- Responsive layout for mobile, tablet and desktop
-- Reusable internship card data rendered with JavaScript
-- Search by role, company, domain, location or keyword
-- Domain filter
-- Clear filters action
-- Empty state when no results match
-- Error state with retry action
-- Keyboard-friendly controls
-- Proper form labels and focus states
-- Skip-to-content link
-- Reduced-motion support
-- No frontend framework required
+---
 
-## Files
+## 🚀 Key Features
+- **Mobile-Responsive Design:** Fluid layout adapting seamlessly across mobile phones, tablets, and wide monitors.
+- **Client-Side Filtering:** Filter listings dynamically by department, location, and internship mode (Remote / On-site).
+- **Accessibility (a11y):** ARIA labels, semantic landmark elements, and high-contrast color palettes.
+- **Rich Documentation:** Includes visual design previews and verification screenshots in `screenshots/`.
 
-```text
+---
+
+## 📂 Project Folder Structure
+```
 responsive-internship-board/
-├── index.html
-├── style.css
-├── script.js
-└── README.md
+├── README.md
+├── README_SCREENSHOTS.md  # Detailed visual design walkthrough
+├── index.html             # Semantic page structure
+├── style.css              # Custom responsive stylesheet
+├── script.js              # Dynamic filtering and search logic
+└── screenshots/           # UI captures across mobile, tablet, and desktop
 ```
 
-## Run locally
+---
 
-Open `index.html` in a browser, or use VS Code Live Server.
-
-## Deployment
-
-This project can be deployed using GitHub Pages:
-
-1. Push the repository to GitHub.
-2. Open **Settings → Pages**.
-3. Under **Build and deployment**, choose **Deploy from a branch**.
-4. Select the `main` branch and `/ (root)`.
-5. Save and wait for GitHub Pages to publish the site.
-
-## Accessibility checklist
-
-- Semantic header, main and footer landmarks
-- Visible labels for form controls
-- Keyboard focus indicators
-- Skip link
-- `aria-live` result/status announcements
-- Accessible link names
-- Responsive design
-- Reduced-motion media query
-
-## Submission checklist
-
-- [ ] Public GitHub repository
-- [ ] Working deployed preview URL
-- [ ] README included
-- [ ] Screenshots added to README if required by the platform
-- [ ] Search tested
-- [ ] Domain filter tested
-- [ ] Empty state tested
-- [ ] Mobile layout tested
-- [ ] Keyboard navigation tested
+## 💻 Execution Instructions
+Simply open `index.html` in any modern web browser or serve via Live Server.
